@@ -44,6 +44,7 @@ img {
   display: block;
   margin-bottom: 2em;
 }
+
 button {
   background-color: var(--clr-neutral-white);
   padding: 0.75rem 1rem;
@@ -53,6 +54,19 @@ button {
   border: none;
   margin-top: 3rem;
 }
+
+div.sedans > button {
+  color: var(--clr-primary-orange);
+}
+
+div.suvs > button {
+  color: var(--clr-primary-cyan);
+}
+
+div.luxury > button {
+  color: var(--clr-primary-dark-cyan);
+}
+
 h1 {
   font-family: var(--ff-accent);
   line-height: 1;
@@ -80,6 +94,7 @@ p {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
 .attribution {
   display: none;
 }
@@ -103,6 +118,7 @@ p {
     border-top-right-radius: 1rem;
   }
 }
+
 @media (min-width: 90em) {
   body{
     height: 100vh;
