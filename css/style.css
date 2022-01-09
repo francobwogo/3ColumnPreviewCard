@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.6;
-  margin: 0;
+  margin: auto;
   height: 100vh;
   max-width: 50em;
   padding: 3em 1.5em;
