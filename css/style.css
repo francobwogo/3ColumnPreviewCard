@@ -1,0 +1,124 @@
+:root {
+  --clr-primary-orange: hsl(31, 77%, 52%);
+  --clr-primary-cyan: hsl(184, 100%, 22%);
+  --clr-primary-dark-cyan: hsl(179, 100%, 13%);
+  --clr-neutral-white: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-light-gray: hsl(0, 0%, 95%);
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-accent: "Big Shoulders Display", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin: 0;
+  height: 100vh;
+  max-width: 50em;
+}
+
+h1,
+p {
+  margin-bottom: 1.5em;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(80%, 70.5rem);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 2em;
+}
+button {
+  background-color: var(--clr-neutral-white);
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 3rem;
+}
+h1 {
+  font-family: var(--ff-accent);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--clr-neutral-white);
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--clr-neutral-light-gray);
+}
+
+.bg-sedans {
+  background-color: var(--clr-primary-orange);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.bg-suvs {
+  background-color: var(--clr-primary-cyan);
+}
+
+.bg-luxury {
+  background-color: var(--clr-primary-dark-cyan);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.attribution {
+  display: none;
+}
+
+@media (min-width: 23.4375em) and (orientation: landscape) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  body > *{
+    flex-basis: 100%;
+  }
+  .bg-sedans {
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+  .bg-luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+  }
+}
+@media (min-width: 90em) {
+  div.sedans > button:hover {
+    border: 1px solid var(--clr-neutral-light-gray);
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-neutral-light-gray);
+    cursor: pointer;
+  }
+  div.suvs > button:hover {
+    border: 1px solid var(--clr-neutral-light-gray);
+    background-color: var(--clr-primary-cyan);
+    color: var(--clr-neutral-light-gray);
+    cursor: pointer;
+  }
+  div.luxury > button:hover {
+    border: 1px solid var(--clr-neutral-light-gray);
+    background-color: var(--clr-primary-dark-cyan);
+    color: var(--clr-neutral-light-gray);
+    cursor: pointer;
+  }
+}
