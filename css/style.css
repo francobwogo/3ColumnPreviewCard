@@ -12,6 +12,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -19,10 +20,6 @@ body {
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.6;
-  margin: auto;
-  height: 100%;
-  max-width: 50em;
-  padding: 3em 1.5em;
 }
 
 h1,
@@ -79,6 +76,13 @@ p {
   color: var(--clr-neutral-light-gray);
 }
 
+.main {
+  margin: auto;
+  height: 100%;
+  max-width: 50em;
+  padding: 3em 1.5em;
+}
+
 .bg-sedans {
   background-color: var(--clr-primary-orange);
   border-top-left-radius: 1rem;
@@ -100,13 +104,13 @@ p {
 }
 
 @media (min-width: 23.4375em) and (orientation: landscape) {
-  body {
+  .main {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
   }
-  body > *{
+  .main > *{
     flex-basis: 100%;
   }
   .bg-sedans {
